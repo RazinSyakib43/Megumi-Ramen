@@ -1,0 +1,613 @@
+<!--Format penulisan komentar berdasarkan soal
+    Soal no 1 ada tanda #1.....
+    Soal no 2 ada tanda #2.....
+    *jika ada atribut atau elemen yang berulang, maka penjelasan akan ditampilkan sekali saja, 
+    agar tidak membuat line menjadi banyak
+-->
+
+<!DOCTYPE html>
+<!-- Deklarasi untuk mendefinisikan dokumen menjadi HTML5 -->
+<html>
+
+<head>
+    <link rel="icon" href="img/Megumi Ramen v3.png">
+    <!-- #1 (LINK) Membuat ikon pada head
+        - rel = "icon" (Menunjukkan bahwa file yang dirujuk adalah file icon)
+        - href (img untuk memasukkan gambar ke dalam html; src merupakan alamat URL gambar)
+    -->
+    <title>Menu - Megumi Ramen</title>
+    <!-- Tag <tittle> untuk membuat judul dari sebuah halaman yang diletakan pada head-->
+</head>
+
+<body>
+    <!-- Navigation Bar-->
+    <nav>
+        <!-- #2 (Fitur Terbaru HTML5) Tag <nav> digunakan sebagai ‘container‘ dari menu navigasi -->
+        <table border="0" width="100%" cellpadding="25" cellspacing="0" bgcolor="#785458">
+            <!-- #1 (TABEL) Membuat tabel dengan mengatur: 
+                - border (tebal garis tepi) sebesar 0px
+                - width (lebar) sebesar 100% atau full
+                - cellpadding (jarak dari border sisi dalam tabel dengan isi) sebesar 25px
+                - cellspacing (jarak antara border bagian dalam dan luar) sebesar 0px
+                - bgcolor (warna latar belakang) berwarna dengan kode HEX #785458
+            -->
+            <tr>
+                <!-- tr (membuat baris pada tabel) -->
+                <td>
+                    <!-- td (membuat kolom atau sel di setiap baris pada tabel)-->
+                </td>
+                <td>
+                    <a href="Home.html">
+                        <img src="img/Megumi Ramen v3.png" width="120px"> </a>
+                    <!-- #1 (IMAGE dan LINK) Memasukan gambar dan mengaturnya sebagai link
+                        - <a> (Tag untuk membuat hyperlink)
+                        - href = "Home.html" (link) mengarahkan link ke dokumen halaman Home
+                        - img src (img untuk memasukkan gambar ke dalam html; src merupakan alamat URL gambar)
+                        - width mengatur lebar gambar sebesar 120px
+                    -->
+                </td>
+                <td width="10%">
+                    <!-- membuat kolom untuk memberi jarak
+                        - width (lebar) sebesar 10% dari lebar baris
+                    -->
+                </td>
+                <td>
+                    <a href="Home.html">
+                        <font face="Helvetica" color="#ffffff" size="5">
+                            Home
+                        </font>
+                    </a>
+                    <!-- #1 (LINK) Membuat teks dan mengaturnya sebagai link
+                        - <a> (Tag untuk membuat hyperlink)
+                        - href = "Home.html" (mengarahkan link ke dokumen halaman Home)
+                        - font (membuat font, warna, dan ukuran untuk teks *FYI tag font sebenarnya tidak disupport lagi di HTML5) 
+                        - face = "Helvetica" (mengatur jenis font Helvetica)
+                        - color = "#ffffff" (mengatur warna teks berwarna dengan kode HEX #ffffff )
+                        - size = "5" (mengatur ukuran teks senilai 5px) 
+                    -->
+                </td>
+                <td><a href="outlets.html">
+                        <font face="Helvetica" color="#ffffff" size="5">
+                            Outlets
+                        </font>
+                    </a>
+                </td>
+                <td><a href="ordering_tips.html">
+                        <font face="Helvetica" color="#ffffff" size="5">
+                            Ordering Tips
+                        </font>
+                    </a>
+                </td>
+                <td><a href="collection.html">
+                        <font face="Helvetica" color="#ffffff" size="5">
+                            Collection Menu
+                        </font>
+                    </a>
+                </td>
+                <td><a href="gallery.html">
+                        <font face="Helvetica" color="#ffffff" size="5">
+                            Gallery
+                        </font>
+                    </a>
+                </td>
+                <td><a href="contact.html">
+                        <font face="Helvetica" color="#ffffff" size="5">
+                            Contact
+                        </font>
+                    </a>
+                </td>
+                <td>
+                    <img src="img/halal.png" width="50px">
+                </td>
+                <td></td>
+            </tr>
+        </table>
+    </nav>
+    <!-- Navigation Bar-->
+
+    <!-- Bagian isi-->
+    <section>
+        <table border="0" width="100%" bgcolor="#292929" cellpadding="0" cellspacing="0">
+            <!-- Membuat jarak-->
+            <tr>
+                <!-- tr (Membuat baris) -->
+                <td height="30" colspan="6" bgcolor="#f3c959">
+                    <!-- td (Membuat kolom)-->
+                    <!-- Mengatur tinggi sebesar 30px ; colspan untuk menggabungkan 6 kolom ; warna latar belakang berwarna dengan kode HEX #f3c959-->
+                </td>
+            </tr>
+
+            <!-- Controls Audio-->
+            <article>
+                <!-- #2 (Fitur Terbaru HTML5) Tag <article> bertujuan untuk menampung konten web yang merupakan artikel-->
+                <tr height="50" align="center" bgcolor="#f3c959">
+                    <!-- tr (membuat baris CONTROLS AUDIO) 
+                        - height (tinggi) sebesar 50px
+                        - align mengatur bentuk perataan data di posisi tengah (center)
+                        - bgcolor (warna latar belakang) berwarna dengan kode HEX #f3c959
+                    -->
+                    <td colspan="6">
+                        <!-- membuat kolom atau sel di setiap baris pada tabel 
+                            - colspan menggabungkan 6 kolom
+                        -->
+                        <audio controls autoplay loop>
+                            <source src="audio/A Day in Mondstadt [EXTENDED].mp3" type="audio/mpeg">
+                            Browsermu tidak mendukung tag audio
+                        </audio>
+                        <!-- #1 (MEDIA) Memasukan media audio
+                            - #2 (Fitur Terbaru HTML5) <audio> (Tag untuk membuat isi suara (tag baru HTML5))
+                            - controls (Menentukkan bahwa controls audio ditampilkan)
+                            - autoplay (Menentukkan bahwa audio akan diputar secara otomatis)
+                            - loop (Digunakan untuk memutar ulang audio ketika selesai)
+                            - <source> (Tag untuk membuat sumber beberapa media untuk elemen media (<video> dan <audio>) (tag baru HTML5))
+                            - type = audio/mpeg (Tipe atau format audio)
+                            - Browsermu tidak mendukung tag audio (Teks ffallback yang akan tampil, jika browser tidak mendukung)
+                        -->
+                        <h3>
+                            <!-- #1 (DOKUMEN) Membuat heading level 3 -->
+                            <font face="Helvetica" color="#oe1013">♪ - A Day in Mondstadt</font>
+                            <!-- Memasukkan teks 
+                                - font (membuat font, warna, dan ukuran untuk teks *FYI tag font sebenarnya tidak disupport lagi di HTML5) 
+                                - face = "Helvetica" (mengatur jenis font Helvetica)
+                                - color = "#oe1013" (mengatur warna teks berwarna dengan kode HEX #oe1013)
+                            -->
+                        </h3>
+                    </td>
+                </tr>
+            </article>
+
+
+            <tr height="100" align="center" bgcolor="#fdd087">
+                <!-- tr (membuat baris GALLERY pada tabel) 
+                        - height (tinggi) sebesar 100px
+                        - align mengatur bentuk perataan data di posisi tengah (center)
+                        - bgcolor (warna latar belakang) berwarna dengan kode HEX #fdd087
+                    -->
+                <td colspan="6">
+                    <!-- membuat kolom atau sel di setiap baris pada tabel 
+                    - colspan menggabungkan 6 kolom
+                -->
+                    <h1>
+                        <font face="Helvetica" size="7" color=" #c14347">
+                            <b>GALLERY</b>
+                        </font>
+                        <!-- Mengatur teks heading
+                            - font (membuat font, warna, dan ukuran untuk teks *FYI tag font sebenarnya tidak disupport lagi di HTML5) 
+                            - face = "Helvetica" (mengatur jenis font Helvetica)
+                            - size (ukuran teks) sebesar 7 px
+                            - color = "#c14347" (mengatur warna teks berwarna dengan kode HEX #c14347 )
+                        -->
+                    </h1>
+                    <hr width="170" color="#c14347">
+                    <!-- Membuat garis horizontal dibawah teks header
+                    - width (lebar) sebanyak 170px
+                    - color (warna) berwarna dengan kode HEX #c14347
+                -->
+                </td>
+            </tr>
+
+            <!-- Membuat jarak-->
+            <tr>
+                <!-- tr (Membuat baris) -->
+                <td height="20" colspan="6" bgcolor="#fdd087">
+                    <!-- td (Membuat kolom)-->
+                    <!-- Mengatur tinggi sebesar 20px ; colspan untuk menggabungkan 6 kolom ; warna latar belakang berwarna dengan kode HEX #f3c959-->
+                </td>
+            </tr>
+
+            <!-- MANAHAN -->
+            <!-- Header Start-->
+            <article>
+                <tr height="100" align="center" bgcolor="#ffb7c5">
+                    <!-- tr (membuat baris MANAHAN pada tabel) 
+                        - height (tinggi) sebesar 100px
+                        - align mengatur bentuk perataan data di posisi tengah (center)
+                        - bgcolor (warna latar belakang) berwarna dengan kode HEX #ffb7c5
+                    -->
+                    <td colspan="6">
+                        <!-- membuat kolom atau sel di setiap baris pada tabel 
+                            - colspan menggabungkan 6 kolom
+                        -->
+                        <h2>
+                            <!-- #1 (DOKUMEN) Membuat heading level 2 -->
+                            <font face="Helvetica" size="6" color="#oe1013">
+                                MANAHAN
+                            </font>
+                            <!-- Mengatur teks heading
+                                - font (membuat font, warna, dan ukuran untuk teks *FYI tag font sebenarnya tidak disupport lagi di HTML5) 
+                                - face = "Helvetica" (mengatur jenis font Helvetica)
+                                - size (ukuran teks) sebanyak 6 px
+                                - color = "#oe1013" (mengatur warna teks berwarna dengan kode HEX #oe1013 )
+                            -->
+                        </h2>
+                    </td>
+                </tr>
+                <!-- Header End-->
+                <!-- Content-->
+                <tr align="center" bgcolor="#ffb7c5">
+                    <!-- tr (membuat baris konten MANAHAN pada tabel) 
+                        - align mengatur bentuk perataan data di posisi tengah (center)
+                        - bgcolor (warna latar belakang) berwarna dengan kode HEX #ffb7c5
+                    -->
+                    <td width="5%" colspan="1"> </td>
+                    <!-- membuat kolom untuk memberi jarak
+                        - colspan 1 untuk mengatur agar baris menggabungkan 1 kolom (menggunakan kolom 1)
+                        - width (lebar) sebanyak 5% dari lebar baris
+                    -->
+                    <td colspan="1">
+                        <br>
+                        <img src="img/Gallery/Manahan/Manahan1R.jpg" width="70%" alt="Tori1" />
+                        <!-- #1 (IMAGE) Memasukan gambar
+                            - img src (img untuk memasukkan gambar ke dalam html; src merupakan alamat URL gambar)
+                            - width mengatur lebar dan ukuran gambar sebesar 70% dari kolom
+                            - alt untuk teks alternatif "Tori1" yang akan ditampilkan saat foto tidak dapat ditampilkan
+                        -->
+                        <br>
+                        <br>
+                    </td>
+                    <td colspan="1">
+                        <br>
+                        <img src="img/Gallery/Manahan/Manahan2R.jpg" width="70%" alt="Tori2" />
+                        <br>
+                        <br>
+                    </td>
+                    <td colspan="1">
+                        <br>
+                        <img src="img/Gallery/Manahan/Manahan3R.jpg" width="70%" alt="Tori3" />
+                        <br>
+                        <br>
+                    </td>
+                    <td colspan="1">
+                        <br>
+                        <img src="img/Gallery/Manahan/Manahan4R.jpg" width="70%" alt="Tori4" />
+                        <br>
+                        <br>
+                    </td>
+                    <td width="5%" colspan="1"> </td>
+                </tr>
+            </article>
+            <!-- Content-->
+
+            <!-- Solo Paragon -->
+            <!-- Header Start-->
+            <article>
+                <tr height="100" align="center" bgcolor="#ffd1da">
+                    <!-- tr (membuat baris SOLO PARAGON pada tabel) 
+                        - height (tinggi) sebesar 100px
+                        - align mengatur bentuk perataan data di posisi tengah (center)
+                        - bgcolor (warna latar belakang) berwarna dengan kode HEX #ffd1da
+                    -->
+                    <td colspan="6">
+                        <!-- membuat kolom atau sel di setiap baris pada tabel 
+                            - colspan menggabungkan 6 kolom
+                        -->
+                        <h2>
+                            <!-- #1 (DOKUMEN) Membuat heading level 2 -->
+                            <font face="Helvetica" size="6" color="#oe1013">
+                                SOLO PARAGON
+                            </font>
+                            <!-- Mengatur teks heading
+                                - font (membuat font, warna, dan ukuran untuk teks *FYI tag font sebenarnya tidak disupport lagi di HTML5) 
+                                - face = "Helvetica" (mengatur jenis font Helvetica)
+                                - size (ukuran teks) sebanyak 6 px
+                                - color = "#oe1013" (mengatur warna teks berwarna dengan kode HEX #oe1013 )
+                            -->
+                        </h2>
+                    </td>
+                </tr>
+                <!-- Header End-->
+                <!-- Content-->
+                <tr align="center" bgcolor="#ffd1da">
+                    <!-- tr (membuat baris konten SOLO PARAGON pada tabel) 
+                        - align mengatur bentuk perataan data di posisi tengah (center)
+                        - bgcolor (warna latar belakang) berwarna dengan kode HEX #ffd1da
+                    -->
+                    <td width="5%" colspan="1"> </td>
+                    <!-- membuat kolom untuk memberi jarak
+                        - colspan 1 untuk mengatur agar baris menggabungkan 1 kolom (menggunakan kolom 1)
+                        - width (lebar) sebanyak 5% dari lebar baris
+                    -->
+                    <td colspan="1">
+                        <br>
+                        <img src="img/Gallery/Solo Paragon/Sopa1R.jpg" width="70%" alt="Tsuke1" />
+                        <!-- #1 (IMAGE) Memasukan gambar
+                            - img src (img untuk memasukkan gambar ke dalam html; src merupakan alamat URL gambar)
+                            - width mengatur lebar dan ukuran gambar sebesar 70% dari kolom
+                            - alt untuk teks alternatif "Tsuke1" yang akan ditampilkan saat foto tidak dapat ditampilkan
+                        -->
+                        <br>
+                        <br>
+                    </td>
+                    <td colspan="1">
+                        <br>
+                        <img src="img/Gallery/Solo Paragon/Sopa2R.jpg" width="70%" alt="Tsuke2" />
+                        <br>
+                        <br>
+                    </td>
+                    <td colspan="1">
+                        <br>
+                        <img src="img/Gallery/Solo Paragon/Sopa3R.jpg" width="70%" alt="Tsuke3" />
+                        <br>
+                        <br>
+                    </td>
+                    <td colspan="1">
+                        <br>
+                        <img src="img/Gallery/Solo Paragon/Sopa4R.jpg" width="70%" alt="Tsuke4" />
+                        <br>
+                        <br>
+                    </td>
+                    <td width="5%" colspan="1"> </td>
+                </tr>
+            </article>
+            <!-- Content-->
+
+            <!-- UNY -->
+            <!-- Header Start-->
+            <article>
+                <tr height="100" align="center" bgcolor="#ffb7c5">
+                    <!-- tr (membuat baris UNY pada tabel) 
+                        - height (tinggi) sebesar 100px
+                        - align mengatur bentuk perataan data di posisi tengah (center)
+                        - bgcolor (warna latar belakang) berwarna dengan kode HEX #ffb7c5
+                    -->
+                    <td colspan="6">
+                        <!-- membuat kolom atau sel di setiap baris pada tabel 
+                            - colspan menggabungkan 6 kolom
+                        -->
+                        <h2>
+                            <!-- #1 (DOKUMEN) Membuat heading level 2 -->
+                            <font face="Helvetica" size="6" color="#oe1013">
+                                UNY
+                            </font>
+                            <!-- Mengatur teks heading
+                                - font (membuat font, warna, dan ukuran untuk teks *FYI tag font sebenarnya tidak disupport lagi di HTML5) 
+                                - face = "Helvetica" (mengatur jenis font Helvetica)
+                                - size (ukuran teks) sebanyak 6 px
+                                - color = "#oe1013" (mengatur warna teks berwarna dengan kode HEX #oe1013 )
+                            -->
+                        </h2>
+                    </td>
+                </tr>
+                <!-- Header End-->
+                <!-- Content-->
+                <tr align="center" bgcolor="#ffb7c5">
+                    <!-- tr (membuat baris konten UNY pada tabel) 
+                        - align mengatur bentuk perataan data di posisi tengah (center)
+                        - bgcolor (warna latar belakang) berwarna dengan kode HEX #ffb7c5
+                    -->
+                    <td width="5%" colspan="1"> </td>
+                    <!-- membuat kolom untuk memberi jarak
+                        - colspan 1 untuk mengatur agar baris menggabungkan 1 kolom (menggunakan kolom 1)
+                        - width (lebar) sebanyak 5% dari lebar baris
+                    -->
+                    <td colspan="1">
+                        <br>
+                        <img src="img/Gallery/UNY/UNY1R.jpg" width="70%" alt="UNY1" />
+                        <!-- #1 (IMAGE) Memasukan gambar
+                            - img src (img untuk memasukkan gambar ke dalam html; src merupakan alamat URL gambar)
+                            - width mengatur lebar dan ukuran gambar sebesar 70% dari kolom
+                            - alt untuk teks alternatif "UNY1" yang akan ditampilkan saat foto tidak dapat ditampilkan
+                        -->
+                        <br>
+                        <br>
+                    </td>
+                    <td colspan="1">
+                        <br>
+                        <img src="img/Gallery/UNY/UNY2R.jpg" width="70%" alt="UNY2" />
+                        <br>
+                        <br>
+                    </td>
+                    <td colspan="1">
+                        <br>
+                        <img src="img/Gallery/UNY/UNY3R.jpg" width="70%" alt="UNY3" />
+                        <br>
+                        <br>
+                    </td>
+                    <td colspan="1">
+                        <br>
+                        <img src="img/Gallery/UNY/UNY4R.jpg" width="70%" alt="UNY4" />
+                        <br>
+                        <br>
+                    </td>
+                    <td width="5%" colspan="1"> </td>
+                </tr>
+            </article>
+            <!-- Content-->
+
+            <!-- SEMARANG TENGAH -->
+            <!-- Header Start-->
+            <article>
+                <tr height="100" align="center" bgcolor="#ffd1da">
+                    <!-- tr (membuat baris SEMARANG TENGAH pada tabel) 
+                        - height (tinggi) sebesar 100px
+                        - align mengatur bentuk perataan data di posisi tengah (center)
+                        - bgcolor (warna latar belakang) berwarna dengan kode HEX #ffd1da
+                    -->
+                    <td colspan="6">
+                        <!-- membuat kolom atau sel di setiap baris pada tabel 
+                            - colspan menggabungkan 6 kolom
+                        -->
+                        <h2>
+                            <!-- #1 (DOKUMEN) Membuat heading level 2 -->
+                            <font face="Helvetica" size="6" color="#oe1013">
+                                SEMARANG TENGAH
+                            </font>
+                            <!-- Mengatur teks heading
+                                - font (membuat font, warna, dan ukuran untuk teks *FYI tag font sebenarnya tidak disupport lagi di HTML5) 
+                                - face = "Helvetica" (mengatur jenis font Helvetica)
+                                - size (ukuran teks) sebanyak 6 px
+                                - color = "#oe1013" (mengatur warna teks berwarna dengan kode HEX #oe1013 )
+                            -->
+                        </h2>
+                    </td>
+                </tr>
+                <!-- Header End-->
+                <!-- Content-->
+                <tr align="center" bgcolor="#ffd1da">
+                    <!-- tr (membuat baris konten SEMARANG TENGAH pada tabel) 
+                        - align mengatur bentuk perataan data di posisi tengah (center)
+                        - bgcolor (warna latar belakang) berwarna dengan kode HEX #ffd1da
+                    -->
+                    <td width="5%" colspan="1"> </td>
+                    <!-- membuat kolom untuk memberi jarak
+                        - colspan 1 untuk mengatur agar baris menggabungkan 1 kolom (menggunakan kolom 1)
+                        - width (lebar) sebanyak 5% dari lebar baris
+                    -->
+                    <td colspan="1">
+                        <br>
+                        <img src="img/Gallery/Semarang Tengah/SemTeng1R.jpg" width="70%" alt="SmrTng1" />
+                        <!-- #1 (IMAGE) Memasukan gambar
+                            - img src (img untuk memasukkan gambar ke dalam html; src merupakan alamat URL gambar)
+                            - width mengatur lebar dan ukuran gambar sebesar 70% dari kolom
+                            - alt untuk teks alternatif "SmrTng1" yang akan ditampilkan saat foto tidak dapat ditampilkan
+                        -->
+                        <br>
+                        <br>
+                    </td>
+                    <td colspan="1">
+                        <br>
+                        <img src="img/Gallery/Semarang Tengah/SemTeng2R.jpg" width="70%" alt="SmrTng2" />
+                        <br>
+                        <br>
+                    </td>
+                    <td colspan="1">
+                        <img src="img/Gallery/Semarang Tengah/SemTeng3R.jpg" width="70%" alt="SmrTng3" />
+                        <br>
+                        <br>
+                    </td>
+                    <td colspan="1">
+                        <img src="img/Gallery/Semarang Tengah/SemTeng4R.jpg" width="70%" alt="SmrTng4" />
+                        <br>
+                        <br>
+                    </td>
+                    <td width="5%" colspan="1"> </td>
+                </tr>
+            </article>
+            <!-- Content-->
+        </table>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <!-- #2 (Fitur Terbaru HTML5) Tag <footer> biasannya digunakan pada bagian bawah halaman-->
+        <table border="0" width="100%" cellpadding="0" cellspacing="0" cellpadding="15" cellspacing="0">
+            <!-- #1 (TABEL) Membuat tabel dengan mengatur: 
+                - border (tebal garis tepi) sebesar 0px
+                - width (lebar) sebesar 100% atau full
+                - cellpadding (jarak dari border sisi dalam tabel dengan isi) sebesar 0px
+                - cellspacing (jarak antara border bagian dalam dan luar) sebesar 0px
+                - bgcolor (warna latar belakang) berwarna dengan kode HEX #785458
+            -->
+            <!-- Footer Id-->
+            <tr>
+                <!-- Memberikan jarak-->
+                <td height="10" colspan="5" bgcolor="#ff3377">
+                    <!-- Mengatur tinggi sebesar 10px ; menggabungkan 6 kolom ; warna latar belakang #ff3377-->
+                </td>
+            </tr>
+            <tr align="center" valign="top" bgcolor="#ff3377">
+                <!-- tr (membuat baris pada tabel) 
+                    - align mengatur bentuk perataan data secara horizontal di posisi tengah (center)
+                    - valign mengatur bentuk perataan data secara vertical di posisi tengah (center)
+                    - bgcolor (warna latar belakang) berwarna dengan kode HEX #e86f68
+                -->
+                <td width="5%" colspan="1"> </td>
+                <!-- membuat kolom untuk memberi jarak
+                    - colspan 1 untuk mengatur agar baris menggabungkan 1 kolom (menggunakan kolom 1)
+                    - width (lebar) sebanyak 5% dari lebar baris
+                -->
+                <td width="30%" colspan="1">
+                    <!-- membuat kolom untuk memberi jarak
+                        - colspan 1 untuk mengatur agar baris menggabungkan 1 kolom (menggunakan kolom 2)
+                        - width (lebar) sebanyak 30% dari lebar baris
+                    -->
+                    <h2>
+                        <!-- #1 (DOKUMEN) Membuat heading level 2 -->
+                        <font face="Courier New" size="5" color="#ffffff">
+                            <b>Opening Hours (All Outlets)</b>
+                            <!-- #1 (DOKUMEN) Menebalkan teks Opening Hours (All Outlets)-->
+                        </font>
+                        <!-- Mengatur teks
+                            - font (membuat font, warna, dan ukuran untuk teks *FYI tag font sebenarnya tidak disupport lagi di HTML5) 
+                            - face = "Courier New" (mengatur jenis font Courier New)
+                            - color = "#000000" (mengatur warna teks berwarna dengan kode HEX #oe1013 \)
+                            - size (ukuran teks) sebesar 5px
+                        -->
+                    </h2>
+                    <p>
+                        <font face="Courier New" size="4" color="#ffffff">
+                            Mon-Fri 13.00 - 23.00
+                            <br>
+                            Sat-Sun 14.30 - 24.00
+                        </font>
+                    </p>
+                </td>
+                <td width="30%" colspan="1">
+                    <h2>
+                        <font face="Courier New" size="5" color="#ffffff">
+                            <b>Email</b>
+                        </font>
+                    </h2>
+                    <p>
+                        <font face="Courier New" size="4" color="#ffffff">
+                            megumiramen@gmail.com
+                        </font>
+                    </p>
+                </td>
+                <td width="30%" colspan="1">
+                    <h2>
+                        <font face="Courier New" size="5" color="#ffffff">
+                            <b>Kantor Pusat</b>
+                        </font>
+                    </h2>
+                    <p>
+                        <font face="Courier New" size="4" color="#ffffff">
+                            Jl. K.S. Tubun No.22, Manahan, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57139
+                        </font>
+                    </p>
+                </td>
+                <td width="5%" colspan="1"> </td>
+            </tr>
+            <!-- Footer Id-->
+
+            <!-- Footer Copyright-->
+            <tr align="center" valign="top" bgcolor="#83b799">
+                <!-- tr (membuat baris pada tabel) 
+                    - align mengatur bentuk perataan data secara horizontal di posisi tengah (center)
+                    - valign mengatur bentuk perataan data secara vertical di posisi tengah (center)
+                    - bgcolor (warna latar belakang) berwarna dengan kode HEX #83b799
+                -->
+                <td width="5%" colspan="1"> </td>
+                <!-- membuat kolom untuk memberi jarak
+                    - colspan 1 untuk mengatur agar baris menggabungkan 1 kolom (menggunakan kolom 1)
+                    - width (lebar) sebanyak 5% dari lebar baris
+                -->
+                <td width="90%" colspan="3">
+                    <!-- membuat kolom untuk memberi jarak
+                        - colspan 1 untuk mengatur agar baris menggabungkan 3 kolom (menggunakan kolom 2, 3, 4)
+                        - width (lebar) sebanyak 90% dari lebar baris
+                    -->
+                    <br>
+                    <font color="#ffffff" size="2" face="Helvetica">
+                        <b>Copyright © 2021 Megumi Ramen | All Rights Reserved.</b>
+                        <!-- #1 (DOKUMEN) Menebalkan teks Copyright © 2021 Megumi Ramen | All Rights Reserved.-->
+                    </font>
+                    <!-- Mengatur teks
+                        - font (membuat font, warna, dan ukuran untuk teks *FYI tag font sebenarnya tidak disupport lagi di HTML5) 
+                        - face = "Helvetica" (mengatur jenis font Helvetica)
+                        - color = "#ffffff" (mengatur warna teks berwarna dengan kode HEX #oe1013 \)
+                        - size (ukuran teks) sebesar 2px
+                    -->
+                    <br>
+                    <br>
+                </td>
+                <td width="5%" colspan="1"> </td>
+            </tr>
+            <!-- Footer Copyright-->
+        </table>
+    </footer>
+    <!-- Footer -->
+
+</body>
+
+</html>
